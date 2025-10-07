@@ -68,7 +68,6 @@ function isPrimeNumber(inputNumber) {
 // console.log(isPrimeNumber(NaN))
 
 // test Cases
-
 const test = [
     2,
     5,
@@ -80,7 +79,7 @@ const test = [
     -8,
     "1",
     7.8,
-    "kalzang",
+    "john",
     undefined,
     null,
     Infinity,
