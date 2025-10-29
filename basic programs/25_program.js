@@ -11,18 +11,17 @@
 //    *****
 //   *******
 
-
-function rightStarPattern(inputNumber) {
+function starPattern(inputNumber) {
     for (let i = 1; i <= inputNumber; i++) {
         let row = ""
         for (let j = 1; j <= inputNumber * 2 - 1; j++) {
-            if (inputNumber + 1 - i >= j && inputNumber - 1 + i <= j) {
+            if (j >= inputNumber + 1 - i && j <= inputNumber - 1 + i) {
                 row += "*"
-            }else{
+            } else {
                 row += " "
             }
         }
         console.log(row)
     }
 }
-rightStarPattern(4)
+starPattern(4)
